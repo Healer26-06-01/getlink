@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Get Video Link</title>
+    <style>
+        body {
+            background-image: url('a.jpg');
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #header {
+            font-size: 72px;
+            margin-top: 20px;
+        }
+
+        #videoInput {
+            width: 500px;
+            padding: 20px;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        #getLinkButton {
+            padding: 20px 40px;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        #videoPlayer {
+            display: block;
+        }
+        #showlink {
+            background-color: #ffff;
+            text-align: left;
+        }
+        #showlink ul li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="header">Get Video Link</h1>
+    <input type="text" id="videoInput" placeholder="Nhập URL video">
+    <button id="getLinkButton" onclick="getVideo()">Get Link</button>
+
+    <div id="videoPlayer">
+    <div id="videoPlayer">
+        <video width="560" height="315" controls></video>
+    </div>
+
+    </div>
+    <div id="showlink">
+        <ul id="linkList"></ul>
+    </div>
+    <script src="getlink.js"></script>
+</body>
+
+</html>
